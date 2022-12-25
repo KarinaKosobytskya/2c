@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'bignoodletitling';
+    src: url('font/bignoodletitling.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.topheader {
+    z-index: 99999;
+    /*CSS-свойство z-index определяет положение позиционированного элемента и его дочерних элементов или флекс-элементов по оси z. 
+    Перекрывающие элементы с большим значением z-index будут накладываться поверх элементов с меньшим z-index. */
+    position: fixed;
+    /*Элемент выбивается из обычного потока документа, и для элемента в макете страницы не создаётся пространство.
+     Он позиционируется относительно исходного содержащего блока,*/
+    width: 100%;
+    background: white;
+    height: 140px;
+}
+
+body {
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 300;
+    background: #ffffff;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    bottom: auto;
+    /*располагается так же, как при статическом позиционировании.*/
+}
+
+.logo>a>img {
+    margin-top: -10px;
+    padding-right: 10px;
+    height: 60px;
+}
+
+.logo>a {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    color: #696969;
+    text-transform: uppercase;
+    font-size: 20px;
+    /* стилизуют заголовки с помощью прописных букв.*/
+    line-height: initial;
+    /* устанавливает величину пространства между строками, например в тексте.
+     В блочных элементах оно указывает минимальную высоту блоков строк внутри элемента.*/
+}
+
+.banner {
+    background: url(images/slider.jpg) #9d91d6;
+    background-blend-mode: multiply, normal;
+    /* Затемним картинку */
+    display: flex;
+    color: #d6d5d5;
+    align-items: center;
+    min-height: 650px;
+    width: 100%;
+    background-size: cover;
+    /* Размер картинки и положение cover - на весь экран*/
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
+}
+
+.banner h2 {
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 2rem;
+}
+
+.scrolldown {
+    position: absolute;
+    left: calc(50% - 52px);
+    margin-top: 10%;
+}
+
+.scrolldown img {
+    margin-bottom: 20px;
+}
+
+.scrolldown p {
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #696969;
+    line-height: initial;
+}
+
+.head_white_content span {
+    background-color: #ff0062;
+    display: inline-block;
+    width: 200px;
+    height: 3px;
+}
+
+.head_white_content {
+    padding: 5%;
+    text-align: center;
+    width: 100%;
+}
+
+.head_white_content p {
+    padding: 20px 90px 0px;
+    color: #696969;
+}
+
+.about {
+    margin-bottom: 90px;
+}
+
+.advantage {
+    text-align: center;
+    width: 100%;
+    background: #ededed;
+    padding: 30px;
+    margin: 3% 0;
+}
+
+.advantage span {
+    font-size: 60px;
+    color: #ff0055;
+}
+
+.advantage h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    color: #707070;
+    padding: 25px 0 13px;
+}
+
+.advantage p {
+    color: #707070;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.somefuctures {
+    background-color: #171f23;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 60px 0;
+}
+
+.numeral>div>span {
+    /* Обращение к иконке */
+}
+
+.numeral>div>p {
+    /* Оброщение к заголовку цыфры*/
+}
+
+.numeral>div>h5 {
+    /*Обращение к цыфры*/
+}
+
+/*Голова для блока цен*/
+.price-content-head {
+    background: #0e1316;
+    color: #ffffff;
+    font-family: -apple- system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 40px 0 30px;
+}
+
+.price-content_head h4 {
+    padding-top: 6px;
+    font-size: 24px
+}
+
+.price-content_head P {
+    margin-top: 25px;
+    padding: 0 25px;
+    font-size: 14px;
+}
+
+/*Тело для блока цен*/
+.price-content-body {
+    background: #1f282c;
+    padding: 45px 0 40px;
+    letter-spacing: 1px;
+    font-size: 300;
+    font-weight: 300;
+}
+
+.price-content-body p {
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: #ffffff;
+
+
+}
+
+/*Стиль для цифр*/
+.price-content-head {
+    background: 14px;
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+/*Стиль для кнопки"Заказать"*/
+
+.sinner1 {
+    padding: 9% 5%;
+    text-align: center;
+    background: #ededed;
+    min-height: 440px;
+}
+
+.sinner1 img {
+    margin: 0 auto;
+}
+
+.sinner1 h4 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.team {
+    padding-bottom: 90px;
+}
+
+.team .bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: adsolute;
+    bottom: 50px;
+    width: 100px;
+    left: -34%;
+}
+
+.map span {
+    /*Общий стиль стрелочек*/
+    margin-left: 10px;
+    font-weight: 700;
+    color: #f15324;
+    font-size: 24px;
+}
+
+.accordion-open span::before {
+    /*Открытая стрелочка*/
+    font-family: 'Linearicons-Free';
+    content: "\e873";
+}
+
+.accordion-closse span::after {
+    /*Закрытая стрелочка*/
+}
+
+footer {
+    background-color: #491032;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 60px 0;
+}
+
+#filters {
+    margin: 1% auto;
+    width: 100%;
+    text-align: center;
+}
+
+#filter li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.filter {
+    display: block;
+    color: #9d91d6;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.filter.active {
+    font-weight: 700;
+    color: #9d91d7;
+    border-bottom: 1 px solid #491032;
+}
+
+#portfoliolist .portfolio {
+    border: none;
+    width: 20%;
+    float: left;
+    overflow: hidden;
+    display: none;
+}
+
+.portfolio-wrapper {
+    overflow: hidden;
+    position: relative !important;
+    cursor: pointer;
+}
+
+.portfolio img {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.imgDisc2 {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 120px;
+    cursor: pointer;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.imgDisc2 h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/*Кликобельная область меню*/
+.primary-nav-trigger {
+    position: absolute;
+    right: 20%;
+    top: 0;
+    height: 100%;
+    width: 60px;
+}
+
+/*При открытой меню убрать среднюю полоску*/
+.primary-nav-trigger .menu-icon.is-clicked {
+    background-color: rgba(255, 225, 225, 0);
+}
+
+/*Поворот "Гамбургер" При открытии в крестик*/
+.primary-nav-trigger .menu-icon.is-clicked::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.primary-nav-trigger .menu-icon.is-clicked::before {
+    top: 0;
+    transform: rotate(225deg);
+}
+
+/*Стиль выпадающего меню*/
+.primary-nav {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 150px 0 0;
+    background: rgba(0, 0, 0, 0.96);
+    text-align: center;
+    backface-visibility: hidden;
+    overflow: auto;
+    transform: translateY(-100%);
+    transition-property: transform;
+    transition-duration: 0.04s;
+}
+
+.primary-nav li {
+    font-weight: 300;
+    margin: .2em 0;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+/*Появление при открытии*/
+.primary-nav.is-visible {
+    transform: translateY(0);
+}
+
+/*Элемент меню*/
+.primary-nav a {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 1em;
+    border-radius: 0.25em;
+    transform: background 0.2s;
+    color: #fff;
+    font-family: 'Robot Condensed', sans-serif;
+}
+
+/*Наведение на элемент меню*/
+.primary-nav a:hover {
+    background-color: #fa3963;
+}
+
+.primary-nav-trigger .menu-icon {
+    display: inline-block;
+    position: absolute;
+    left: 20%;
+    /*ИЗМЕНЕНО*/
+    top: 50%;
+    width: 39px;
+    height: 2px;
+    background-color: black;
+}
+
+.primary-nav-trigger .menu-icon::before,
+.primary-nav-trigger .menu-icon::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /*Дописано*/
+    transition: transform .3s, top .3s;
+}
